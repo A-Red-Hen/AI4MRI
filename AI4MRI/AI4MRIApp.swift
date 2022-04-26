@@ -11,7 +11,7 @@ import SwiftUI
 struct AI4MRIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MultiTabView()
         }
     }
 }

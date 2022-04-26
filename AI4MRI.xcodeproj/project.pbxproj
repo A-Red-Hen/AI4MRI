@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		9130A48628178A0D00E6BEEB /* AI4MRIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9130A48528178A0D00E6BEEB /* AI4MRIApp.swift */; };
-		9130A48828178A0D00E6BEEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9130A48728178A0D00E6BEEB /* ContentView.swift */; };
 		9130A48A28178A1200E6BEEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9130A48928178A1200E6BEEB /* Assets.xcassets */; };
 		9130A48D28178A1200E6BEEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9130A48C28178A1200E6BEEB /* Preview Assets.xcassets */; };
+		9130A49428178A6700E6BEEB /* AIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9130A49328178A6700E6BEEB /* AIView.swift */; };
+		9130A49628178ACD00E6BEEB /* MultiTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9130A49528178ACD00E6BEEB /* MultiTabView.swift */; };
+		9130A49828178AF800E6BEEB /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9130A49728178AF800E6BEEB /* IntroView.swift */; };
+		9130A49A28178B1E00E6BEEB /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9130A49928178B1E00E6BEEB /* AboutView.swift */; };
+		9130A49D28178B4200E6BEEB /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9130A49C28178B4200E6BEEB /* SwiftyJSON */; };
+		9130A4A028178B5D00E6BEEB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9130A49F28178B5D00E6BEEB /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9130A48228178A0D00E6BEEB /* AI4MRI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AI4MRI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9130A48528178A0D00E6BEEB /* AI4MRIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI4MRIApp.swift; sourceTree = "<group>"; };
-		9130A48728178A0D00E6BEEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9130A48928178A1200E6BEEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9130A48C28178A1200E6BEEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9130A49328178A6700E6BEEB /* AIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIView.swift; sourceTree = "<group>"; };
+		9130A49528178ACD00E6BEEB /* MultiTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiTabView.swift; sourceTree = "<group>"; };
+		9130A49728178AF800E6BEEB /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		9130A49928178B1E00E6BEEB /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9130A49D28178B4200E6BEEB /* SwiftyJSON in Frameworks */,
+				9130A4A028178B5D00E6BEEB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				9130A48528178A0D00E6BEEB /* AI4MRIApp.swift */,
-				9130A48728178A0D00E6BEEB /* ContentView.swift */,
+				9130A49328178A6700E6BEEB /* AIView.swift */,
+				9130A49528178ACD00E6BEEB /* MultiTabView.swift */,
+				9130A49728178AF800E6BEEB /* IntroView.swift */,
+				9130A49928178B1E00E6BEEB /* AboutView.swift */,
 				9130A48928178A1200E6BEEB /* Assets.xcassets */,
 				9130A48B28178A1200E6BEEB /* Preview Content */,
 			);
@@ -83,6 +96,10 @@
 			dependencies = (
 			);
 			name = AI4MRI;
+			packageProductDependencies = (
+				9130A49C28178B4200E6BEEB /* SwiftyJSON */,
+				9130A49F28178B5D00E6BEEB /* Alamofire */,
+			);
 			productName = AI4MRI;
 			productReference = 9130A48228178A0D00E6BEEB /* AI4MRI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,10 @@
 				Base,
 			);
 			mainGroup = 9130A47928178A0D00E6BEEB;
+			packageReferences = (
+				9130A49B28178B4200E6BEEB /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				9130A49E28178B5D00E6BEEB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 9130A48328178A0D00E6BEEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9130A48828178A0D00E6BEEB /* ContentView.swift in Sources */,
+				9130A49428178A6700E6BEEB /* AIView.swift in Sources */,
+				9130A49828178AF800E6BEEB /* IntroView.swift in Sources */,
+				9130A49628178ACD00E6BEEB /* MultiTabView.swift in Sources */,
+				9130A49A28178B1E00E6BEEB /* AboutView.swift in Sources */,
 				9130A48628178A0D00E6BEEB /* AI4MRIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +363,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9130A49B28178B4200E6BEEB /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		9130A49E28178B5D00E6BEEB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9130A49C28178B4200E6BEEB /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9130A49B28178B4200E6BEEB /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		9130A49F28178B5D00E6BEEB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9130A49E28178B5D00E6BEEB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9130A47A28178A0D00E6BEEB /* Project object */;
 }
