@@ -5,6 +5,8 @@
 //  Created by Neha Shaik on 4/25/22.
 //
 
+// I recommend you run this with tthe iPhone 13 Pro model in the Simulator
+
 import SwiftUI
 
 @main
